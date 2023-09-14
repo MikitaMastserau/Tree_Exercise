@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Tree_Exercise/static/css/main.a6c894cb.css",
+    "main.js": "/Tree_Exercise/static/js/main.b2813e1d.js",
+    "index.html": "/Tree_Exercise/index.html",
+    "main.a6c894cb.css.map": "/Tree_Exercise/static/css/main.a6c894cb.css.map",
+    "main.b2813e1d.js.map": "/Tree_Exercise/static/js/main.b2813e1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6c894cb.css",
+    "static/js/main.b2813e1d.js"
+  ]
+}
