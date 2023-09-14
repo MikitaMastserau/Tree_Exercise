@@ -28,7 +28,11 @@ export const TreeContainer = () => {
    };
 
    const createRoot = () => {
-      const root = { id: uuid(), name: "Root", children: [] };
+      const root = {
+         id: uuid(),
+         name: "Root",
+         children: [],
+      };
 
       setBranches([root]);
 
@@ -36,14 +40,19 @@ export const TreeContainer = () => {
    };
 
    const handleAddBranch = (parentId, branchName) => {
-      const isUnique = isNameUnique(branchName, branches[0]);
+      const isUnique = isNameUnique(branchName.trim(), branches[0]);
 
       if (isUnique) {
-         const newBranch = { id: uuid(), name: branchName, children: [] };
+         const newBranch = {
+            id: uuid(),
+            name: branchName,
+            children: [],
+         };
 
          const findBranchAndAdd = (currentBranch) => {
             if (currentBranch.id === parentId) {
                currentBranch.children.push(newBranch);
+
                return true;
             }
             for (const child of currentBranch.children) {
